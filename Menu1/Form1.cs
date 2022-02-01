@@ -21,5 +21,13 @@ namespace Menu1
         {
             test.Visible = false;
         }
+
+        private void accordionControlElement15_Click(object sender, EventArgs e)
+        {
+            Modulos.Config_Sistema.Presentacion.RegistroUsuario  frmRegistro  = new Modulos.Config_Sistema.Presentacion.RegistroUsuario ();
+
+            frmRegistro.Show();
+
+        }
     }
 }
