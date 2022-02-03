@@ -20,6 +20,7 @@ namespace Menu1
         private void Form1_Load(object sender, EventArgs e)
         {
             test.Visible = false;
+            
         }
 
         private void accordionControlElement15_Click(object sender, EventArgs e)
@@ -27,6 +28,16 @@ namespace Menu1
             Modulos.Config_Sistema.Presentacion.RegistroUsuario  frmRegistro  = new Modulos.Config_Sistema.Presentacion.RegistroUsuario ();
 
             frmRegistro.Show();
+
+        }
+
+        private void btnCerrarSesion_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Menu1.Login inicio = new Menu1.Login();
+            Hide();
+          
+            inicio.Show();
+
 
         }
     }
